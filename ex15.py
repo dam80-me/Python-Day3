@@ -15,6 +15,12 @@ print(f"Current working directory (Path object): {current_dir}")
 relative_file = pathlib.Path('my_document.txt')
 print(f"Relative file path: {relative_file}")
 
+# An absolute path (example, adjust)
+absolute_path = pathlib.Path('/tmp/test_dir')
+
+print(f"Absolute path (example): {absolute_path}")
+
+
 """
 print("")
 # --- Setup: Create a dummy directory for archiving ---
