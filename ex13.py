@@ -19,11 +19,10 @@ except FileNotFoundError:
 except Exception as e:
     print(f"An error occured during copy: {e}")
 
-"""
 # --- Cleanup---
-    if os.path.exists(source_dir):
-        shutil.rmtree(source_dir)
-    if os.path.exists(destination_dir):
-        shutil.rmtree(destination_dir)
-    print("Cleaned up dummy directories.")"""
+    if os.path.exists(source_file):
+        os.remove(source_file)
+    if os.path.exists(destination_file):
+        os.remove(destination_file)
+print("Cleaned up dummy files.")
 
